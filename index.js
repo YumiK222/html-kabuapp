@@ -197,5 +197,6 @@ function save() {
     //    console.log(i + ':' + comment_content.value);
         ptag.innerText = comment_content.value; 
         comment_content.remove();
+        
     }
 }
