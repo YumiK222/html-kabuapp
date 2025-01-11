@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSSのコメント */
+body {
+    background-color: #fffeee;
+}
+#div_operation {
+    text-align: center;
+    background: rgb(129, 172, 179);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-width: 1px;
+    border-style: ridge;
+}
+#meigara_count_table {
+    margin: 0 auto;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(129, 172, 179);
+}
+#comment_table {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    visibility: hidden;
+}
+#meigara_code {
+    width: 180px;
+    height: 50px;
+    border: solid 1px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+#meigara_name {
+    width: 500px;
+    height: 50px;
+    border: solid 1px;
+    background-color: rgb(66, 66, 66);
+    color:   white;
+}
+#comment {
+    width:1200px;
+    height: 50px;
+    border: solid 1px;
+    background-color: rgb(66, 66, 66);
+    color:  white;
+}
+#ope {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: solid 1px;
+    background-color: rgb(66, 66, 66);
+    color:  white;
+}
+.comment_td {
+    height: 40px;
+    border: solid 1px;
+    background-color: #fffeee;
+    border-color: gray;
+}
+textarea {
+    width: 900px;
+}
+.noborder {
+    border: none;
+}
+td {
+    border: solid 1px;
+}
+#save_button {
+    margin: 10px;
+    width : 100px;
+}
+.deletebutton {
+    margin-left: 20px;
+}
