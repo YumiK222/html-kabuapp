@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HTMLのコメント -->
+    <div id="div_operation">
+        <form name="myform">
+            <!-- 入力ファイル選択 -->
+            <input id="myfile" type="file" />
+        </form>   
+        <!-- 読み込み銘柄数表示テーブル --> 
+        <table id="meigara_count_table">
+            <tr>
+                <td name="meigarasu_title" class="noborder">銘柄数：</td> 
+                <td id="meigarasu" class="noborder">XXX</td>
+            </tr>
+        </table>
+        <!-- スライドショー一時停止ボタン -->
+        <button type="button" id="pause_button" onclick="pause_slideshow()">スライドショー一時停止</button>
+        <!-- スライドショー再開ボタン -->
+        <button type="button" id="restart_button" onclick="restart_slideshow()">スライドショー再開</button>
+        <br>
+        <button type="button" id="save_button" onclick="save()">保存</button>
+    </div>
+    <div id="div_table">
+        <!-- コメント用テーブル --> 
+        <table id="comment_table">
+            <tr>
+                <th id="meigara_code">銘柄コード</td> 
+                <th id="meigara_name">銘柄名</td>
+                <th id="comment">コメント</th>
+                <th id="ope">操作</th>
+            </tr>
+        </table>
+
+    </div>
+    <script src="C:\kabuapp\index.js"></script>
+</body>
+</html>
