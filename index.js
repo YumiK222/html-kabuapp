@@ -144,16 +144,17 @@ function add_table(meigara_code, meigara_name){
     var comment_text = document.createElement("textarea");
     comment_text.setAttribute('id', 'comment_text'+ table_row);
     td_comment.appendChild(comment_text);
-    //pタグ
-    var ptag = document.createElement("p");
-    ptag.setAttribute('id', 'msg'+ table_row);
-    td_comment.appendChild(ptag);
+   //pタグ
+ //   var ptag = document.createElement("p");
+ //   ptag.setAttribute('id', 'msg'+ table_row);
+ //   ptag.setAttribute('visibility', 'hidden');
+ //   td_comment.appendChild(ptag);
     //行削除ボタン
     var td_button = newrow.insertCell(-1);
     var delete_button = document.createElement("button");
     delete_button.setAttribute('id', table_row);
-    delete_button.setAttribute('classname', 'deletebuttun');
-//    delete_button.setAttribute('class', 'delete_button');
+//    delete_button.setAttribute('classname', 'deletebuttun');
+    delete_button.setAttribute('class', 'deletebutton');
     delete_button.setAttribute('onclick', 'deleterow(this)');
     var text = document.createTextNode("行削除");
     td_button.appendChild(delete_button).appendChild(text);
@@ -185,9 +186,16 @@ function save() {
     console.log(table_row);
     for(var i = 1; i < table_row; i++){
         var comment_content = document.getElementById('comment_text'+ i);
-        var msg_content = document.getElementById('msg'+ i);
-        console.log(i + ':' + comment_content.value);
-        msg_content.innerText = comment_content.value; 
-        comment_content.value = '';
-}
+        //親要素（コメント列のtd）を取得する。
+        var parent = comment_content.parentElement;
+        //pタグを追加する
+        var ptag = document.createElement("p");
+        ptag.setAttribute('id', 'msg'+ i);
+        parent.appendChild(ptag);
+        //console.log(parent);
+//        var msg_content = document.getElementById('msg'+ i);
+    //    console.log(i + ':' + comment_content.value);
+        ptag.innerText = comment_content.value; 
+        comment_content.remove();
+    }
 }

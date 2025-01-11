@@ -29,21 +29,21 @@ body {
     visibility: hidden;
 }
 #meigara_code {
-    width: 180px;
+    width: 153px;
     height: 50px;
     border: solid 1px;
     background-color: rgb(66, 66, 66);
     color: white;
 }
 #meigara_name {
-    width: 500px;
+    width: 401px;
     height: 50px;
     border: solid 1px;
     background-color: rgb(66, 66, 66);
     color:   white;
 }
 #comment {
-    width:1200px;
+    width:1181px;
     height: 50px;
     border: solid 1px;
     background-color: rgb(66, 66, 66);
@@ -64,7 +64,8 @@ body {
     border-color: gray;
 }
 textarea {
-    width: 900px;
+    width: 1200px;
+    height: 50px;
 }
 .noborder {
     border: none;
@@ -77,5 +78,5 @@ td {
     width : 100px;
 }
 .deletebutton {
-    margin-left: 20px;
+    margin-left: 15px;
 }
